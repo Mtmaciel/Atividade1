@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ftec.ProgWeb.Atividade1", "Ftec.ProgWeb.Atividade1\Ftec.ProgWeb.Atividade1.csproj", "{ABACAE8A-808D-4BB9-9E51-25D83CB4523B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABACAE8A-808D-4BB9-9E51-25D83CB4523B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABACAE8A-808D-4BB9-9E51-25D83CB4523B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABACAE8A-808D-4BB9-9E51-25D83CB4523B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABACAE8A-808D-4BB9-9E51-25D83CB4523B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0FF7A01-CE62-4053-8563-8D7AE998259D}
+	EndGlobalSection
+EndGlobal

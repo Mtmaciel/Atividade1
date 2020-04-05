@@ -1,0 +1,42 @@
+﻿@model List<Ftec.ProgWeb.Atividade1.Models.Funcionario>
+    @{
+        ViewBag.Title = "Funcionário";
+    }
+    <div id="header">
+        <h2>Funcionarios</h2>
+        <br />
+        <div class="col-md-12">
+            @Html.ActionLink("Cadastrar Novo Funcionário", "Cadastrar");
+        </div>
+        
+        <br />
+        <form method="get" action="Funcionarios/Procurar">
+            <div class="col-md-12">
+                <input class="col-xs-11 form-control" id="busca" type="text" name="busca" />
+                <input type="submit" value="Procurar" class="col-xs-1 btn btn-default" />
+            </div>
+        </form>
+    </div>
+    <hr />
+    <div id="list_Funcionarios">
+        <div id="list-header" class="col-xs-12 form-group">
+            <span class="col-xs-2"><b>Código</b></span>
+            <span class="col-xs-3"><b>Nome</b></span>
+            <span class="col-xs-2"><b>Idade</b></span>
+            <span class="col-xs-2"><b>Cargo</b></span>
+        </div>
+        @{ if (Model != null)
+            {
+                foreach (var Funcionario in Model)
+                {
+                    <div class="col-xs-12 form-group" id="Funcionario-@Funcionario.Codigo">
+                        <span class="col-xs-2">@Funcionario.Codigo</span>
+                        <span class="col-xs-3">@Funcionario.Nome</span>
+                        <span class="col-xs-2">@Funcionario.Idade</span>
+                        <span class="col-xs-2">@Funcionario.Cargo</span>
+                        <a class="btn  btn-default btn-xs" href="@Url.Action("Excluir", "Funcionarios", new { codigo = Funcionario.Codigo })">Excluir</a>
+                    </div>
+                }
+            }
+        }
+    </div>
